@@ -40,8 +40,8 @@ var manifest = [
     ]];
 
 
-function playSound(target) {
-    new Audio(soundsPath + manifest[wordNumber][target.id] + extension).play();
+export function playSound(id: number) {
+    new Audio(soundsPath + manifest[wordNumber][id] + extension).play();
 
     if (wordNumber < 4) {
         wordNumber++;
